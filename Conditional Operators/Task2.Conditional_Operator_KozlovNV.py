@@ -10,8 +10,8 @@ Num_1 = int(input("Enter the first number:"))
 Num_2 = int(input("Enter the second number:"))
 
 if Num_1 % 2 == 0 and Num_2 % 2 == 0:
-    print(f"{Num_1},{Num_2} Both numbers are even. One number is a divisor of another. \n Enter "*" if you need to find the result of a multiplication:")
-    A = int(input "Enter "*" if you need to find the result of a multiplication:")
+    print(f"{Num_1},{Num_2} Both numbers are even. One number is a divisor of another. \n Enter 1 if you need to find the result of a multiplication:")
+    A = int(input ("Enter 1 if you need to find the result of a multiplication:"))
     if A == 1:
         Num_3 = Num_1 * Num_2
     elif A == 2: 
