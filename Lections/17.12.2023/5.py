@@ -6,10 +6,10 @@ class Rectangle:
 
     def print(self):
      print(f"Ширина: {self.width}, Высота: {self.height}")
-
+     
     def PrintP(rectangle):
         return 2 * (rectangle.width + rectangle.height)
-    
+        
     def PrintS(rectangle):
         return rectangle.width * rectangle.height
 

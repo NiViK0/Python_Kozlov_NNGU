@@ -12,10 +12,7 @@ class Writing_Table:
     def PrintS(Writing_Table):
         return Writing_Table.width * Writing_Table.height
       
-    def __Check__(self, other):
-     if isinstance(other, Writing_Table):
-        return self.width == other.width and self.height == other.height and self.length == other.length 
-     else:
-         return False
-     
-    def _Possibility_item__allocation(PrintS, obj2, area):
+    def __Check__(self):
+        return (self.length*self.width)
+    def SetColot(self, color_new):
+       self.color=color_new
