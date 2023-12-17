@@ -14,6 +14,7 @@ class DeskTable:
         print("Ширина стола",self.width)
         print("высота стола",self.high)
         print("цвет стола",self.color)
+        print("свободная площадь стола ",self.current_s)
         print("Список вещей на столе",self.list)
     
     def CountS(self):
@@ -32,20 +33,26 @@ class DeskTable:
             self.current_s = self.current_s-s1
         else:
             print("объект ", name, " разместить на столе нельзя")
+    def DeleteItem(self, name, s1):
+        if ( name in self.list):
+            self.list.remove(name)
+            self.current_s = self.current_s+s1
+        else:
+            print("такого объекта ", name, " нет на столе ")        
 #-------------main----------
 a=DeskTable()
 a.Print()
-color_new=input("Введите цвет стола")
-a.SetColor(color_new)
-length_new=input("Введите новую длину стола")
-a.SetLength(length_new)
+
+#color_new=input("Введите цвет стола")
+#a.SetColor(color_new)
+
+#length_new=input("Введите новую длину стола")
+#a.SetLength(length_new)
+#a.Print()
+
+a.AddItem("TV1", 2)
+a.AddItem("TV2", 3)
 a.Print()
 
-def remove_object_from_table(AddItem):
-    new_list = list_of_objects.copy()
-    if object_to_remove in new_list:
-        new_list.remove(object_to_remove)
-    return new_list
-
-result_list = remove_object_from_list(2)
-print(result_list)  # вывод: [1, 3, 4, 5]
+a.DeleteItem("TV2", 3)
+a.Print()
