@@ -17,5 +17,5 @@ class Car:
 car_a = Car()
 car_b = Car()
 
-print("car_a.name ",car_a.name)
-print("car_b.name ",car_b.name)
+print("car_a.make ",car_a.make)
+print("car_b.make ",car_b.make)
