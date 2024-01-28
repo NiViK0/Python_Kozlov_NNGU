@@ -11,7 +11,7 @@
 #выходные данные
 #4 5 3 5 0 0 0 0 
 
-input_list = list(map(int, input("List-compression. Input some numbers in list:").split()))
+input_list = list(map(int, input("List-compression.Input some numbers in list:").split()))
 z_elem = len(input_list) - 1
 
 for i in range(len(input_list)):
