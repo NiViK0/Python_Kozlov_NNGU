@@ -1,0 +1,33 @@
+!
+service timestamps debug datetime msec localtime show-timezone year
+service timestamps log datetime msec localtime show-timezone year
+service password-encryption
+service sequence-numbers
+!
+no ip domain lookup
+!
+ip ssh version 2
+!
+interface FastEthernet 0/0
+  ip address 192.168.1.254 255.255.255.0
+  no shutdown
+interface FastEthernet 0/1
+interface FastEthernet 0/2
+interface FastEthernet 0/3
+interface FastEthernet0/1
+no shutdown
+ip address 201.201.201.1 255.255.255.0
+interface FastEthernet0/1
+no shutdown
+ip address 201.201.201.1 255.255.255.0
+interface FastEthernet0/1
+no shutdown
+ip address 201.201.201.1 255.255.255.0
+interface FastEthernet0/1\  nno shutdown
+  ip address 201.201.201.1 255.255.255.0
+interface FastEthernet0/1
+  no shutdown
+  ip address 201.201.201.1 255.255.255.0
+interface FastEthernet0/1
+  no shutdown
+  ip address 201.201.201.1 255.255.255.0
