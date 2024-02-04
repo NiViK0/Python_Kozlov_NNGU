@@ -1,0 +1,11 @@
+import ipaddress
+ip1 = ipaddress.ip_address('10.0.1.1')
+ip2 = ipaddress.ip_address('10.0.2.1')
+print(ip1 > ip2)
+print(ip2 > ip1)
+print(ip1 == ip2)
+print(ip1 != ip2)
+print(str(ip1))
+print(int(ip1))
+print(ip1 + 5)
+print(ip1 - 5)
