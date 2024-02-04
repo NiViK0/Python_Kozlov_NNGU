@@ -1,4 +1,3 @@
-list1 = ['str1', 'str2', 'str3']
-
-for position, string in enumerate(list1):
-    print(position, string)
+from operator import itemgetter
+list_of_list = [[1,9,2],[8,2],[190,1]]
+print(sorted(list_of_list, key=itemgetter(1)))
