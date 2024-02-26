@@ -1,0 +1,1 @@
+print(re.findall('\s\d{1,4}\s',mac_table))
